@@ -1,0 +1,12 @@
+/* Embedded fonts (SIL Open Font License; licences in ./fonts). Latin subsets only, so the single-file build works offline.
+   Instrument Serif: headlines (regular + italic). Instrument Sans: interface. DM Mono: small labels.
+   Rupee: the ₹ sign (from Inter, same licence) because the fonts above have no ₹ glyph; it is used only for U+20B9.
+   Instrument Serif and Instrument Sans are both SIL OFL 1.1 fonts from the Instrument team; the licence text is shipped as OFL-InstrumentSans.txt (check Instrument Serif's own copy on Google Fonts before redistributing). */
+@font-face { font-family: 'Instrument Serif'; src: url('./fonts/instrument-serif.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Instrument Serif'; src: url('./fonts/instrument-serif-italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Instrument Sans'; src: url('./fonts/instrument-sans-400.woff') format('woff'); font-weight: 300 500; font-display: swap; }
+@font-face { font-family: 'Instrument Sans'; src: url('./fonts/instrument-sans-700.woff') format('woff'); font-weight: 600 800; font-display: swap; }
+@font-face { font-family: 'DM Mono'; src: url('./fonts/dmmono-400.woff') format('woff'); font-weight: 300 600; font-display: swap; }
+@font-face { font-family: 'Rupee'; src: url('./fonts/rupee-300.woff') format('woff'); font-weight: 100 300; unicode-range: U+20B9; font-display: swap; }
+@font-face { font-family: 'Rupee'; src: url('./fonts/rupee-400.woff') format('woff'); font-weight: 400 500; unicode-range: U+20B9; font-display: swap; }
+@font-face { font-family: 'Rupee'; src: url('./fonts/rupee-700.woff') format('woff'); font-weight: 600 900; unicode-range: U+20B9; font-display: swap; }

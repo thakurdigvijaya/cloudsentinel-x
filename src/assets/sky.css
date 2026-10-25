@@ -1,0 +1,7 @@
+/* The two skies, defined once: used by the landing hero and closing, and by the soft band at the top of the workspace.
+   Day is the original mountain-and-mist picture. Twilight is the same picture re-coloured after dark (made with a
+   short Pillow script: deep-blue sky with stars, a peach horizon, teal ridges). */
+.sky-img { position: absolute; inset: 0; background-size: cover; background-position: 50% 72%; transition: opacity 0.9s ease; }
+.sky-img.day { background-image: url('./cloudscape.webp'); }
+.sky-img.night { background-image: url('./cloudscape-night.webp'); }
+:root[data-theme='dark'] .sky-img.day, :root[data-theme='light'] .sky-img.night { opacity: 0; }

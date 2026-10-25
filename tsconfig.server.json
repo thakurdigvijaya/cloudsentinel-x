@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.engine.json",
+  "compilerOptions": { "types": ["node"] },
+  "include": ["server/*.ts", "src/engine/*.ts", "src/data/*.ts", "src/lib/*.ts"],
+  "exclude": ["server/*.test.ts"]
+}
